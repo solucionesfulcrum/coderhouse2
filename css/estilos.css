@@ -6,29 +6,25 @@
 
 .nav{
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr auto 3fr;
     position: fixed;
 }
 
 .nav__nameOrg{
     display: inline-block;
     background-color: white;
-    width: 30%;
+    width: 100%;
 }
 
 .nav__links{
     background-color: #376565;
     border-bottom-left-radius: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    width: 70%;
+    justify-items: center;
+    width: 100%;
 }
 
 .nav__imagen{
@@ -37,6 +33,7 @@
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .nav__texto{
@@ -45,42 +42,46 @@
 }
 
 .header__about{
+    display: grid;
+    grid-template-columns: 1fr;
     margin-bottom: 10rem;
-    display: flex;
     justify-items: center;
-    align-items: center;
 }
 
 .youtube{
-    margin: 10rem 10rem 2rem 20rem;
+    margin: 2rem;
 }
 
 .Pag{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
     align-items: center;
+    justify-items: center;
 }
 
 h1{
     color: #376565;
-    margin: 6rem 10rem 3rem 10rem
+    margin: 6rem 3rem 3rem 3rem
 }
 
-.Pag__cuerpo{
-    display: flex;
+.Pag__titulo{
+    display: grid;
     align-items: center;
-    flex-direction: column;
-    width: 1100px;
-    height: 800px;
+}
+.Pag__cuerpo{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     background-image: url("../images/nosotros_img.png");
-    background-size: 1200px 900px;  
+    background-size: 100% 100%;  
     background-repeat: no-repeat;
 }
 
 h2{
-    display: flex;
+    display: grid;
     align-items: center;
-    margin: 3rem 10rem 3rem 10rem;
+    margin: 3rem 3rem 3rem 3rem;
     text-align: center;
 }
 
@@ -101,22 +102,26 @@ h2.Pag__letraPrin{
     width: 40rem;
     color: black;
 }
+
+#donaciones{
+    display: grid;
+    justify-items: center;
+}
  
 .donaciones__imagen{
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
 }
 
 .donaciones__pag{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .donaciones__detalle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
     background-color: #C9C1BF;
 }
 
@@ -127,14 +132,14 @@ h2.Pag__letraPrin{
 }
 
 .losPerritos__img{
-    width: 40rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     margin-bottom: 3rem;
 }
 
 .losPerritos__event{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .losPerritos__detalles{
@@ -142,7 +147,7 @@ h2.Pag__letraPrin{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 .losPerritos__actions{
@@ -164,7 +169,7 @@ h2.Pag__letraPrin{
 }
 
 .losPerritos__parrafo{
-    width: 50%;
+    width: 100%;
 }
 
 h2.losPerritos__title{
@@ -175,3 +180,4 @@ img.petShop__img{
     width: 50rem;
     height: 35rem;
 }
+
