@@ -99,8 +99,9 @@ h2{
 }
 
 .donaciones__img{
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2rem;
 }
 
 .donaciones__fondos{
@@ -130,6 +131,18 @@ h2{
         color: white;
         text-decoration: none;
         font-size: 0;
+    }
+
+    .donaciones__detalle{
+        grid-template-columns: 2fr;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+    
+    h2{
+        font-size: 0.8rem;
     }
 }
 
