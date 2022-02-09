@@ -41,7 +41,6 @@
 }
 
 #about{
-    border: 1px solid black;
     display: grid;
     height: 100vh;
 }
@@ -124,17 +123,106 @@ h2{
     flex-direction: row;
 }
 
+#losPerritos{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.losPerritos__img{
+    height: 20rem;
+    width: 100%;
+}
+
+.losPerritos__event{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+
+.losPerritos__detalles{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #C9C1BF;
+}
+
+h2.losPerritos__title{
+    width: 100%;
+
+}
+
+.losPerritos__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2rem;
+}
+
+#petShop{
+    border: 1px solid black;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 10fr;
+    justify-items: center;
+    align-items: center;
+}
+
+img.petShop__img{
+    width: 100%;
+    height: 80%;
+}
+
+#rendicion{
+    border: 1px solid black;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#fotos{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    grid-gap: 1rem;
+}
+
+.contenedor__foto{
+    display: flex;
+}
+
+.imagen__foto{
+    width: 100%;
+    height: 100%;
+}
+
+
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 320px) {
     .nav__texto{
-        color: white;
-        text-decoration: none;
         font-size: 0;
     }
 
+    #donaciones{
+        grid-template-rows: 1fr 5fr auto;
+    }
+
     .donaciones__detalle{
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr;
     }
 
     h1{
@@ -144,7 +232,35 @@ h2{
     h2{
         font-size: 0.8rem;
     }
+
+    .losPerritos__event{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .losPerritos__detalles{
+        grid-gap: 1rem;
+    }
+
+    #fotos{
+        grid-template-columns: 1fr;
+    }
+
 }
+
+@media only screen and (min-width: 768px) {
+    .nav__texto{
+        font-size: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav__texto{
+        font-size: 1rem;
+    }
+}
+
+
 
 
 
