@@ -8,6 +8,7 @@
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    position: fixed;
 }
 
 .nav__nameOrg{
